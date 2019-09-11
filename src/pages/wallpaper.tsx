@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Button} from 'antd';
+import {Button} from "antd";
 import axios from 'axios'
 
 interface Paper {
@@ -7,7 +7,7 @@ interface Paper {
     url: string;
 }
 
-export class Wallpaper extends Component<any, Paper> {
+class Wallpaper extends Component<any, Paper> {
 
     constructor(props: any) {
         super(props);
@@ -19,7 +19,7 @@ export class Wallpaper extends Component<any, Paper> {
     }
 
     componentDidMount(): void {
-        axios.get('http://api.wmmt119.top/wallpaper/wallpapers/' + this.props.match.params.id + "/")
+        axios.get('https://api.wmmt119.top/wallpaper/wallpapers/' + this.props.match.params.id + "/")
             .then((res: any) => {
                 let json = res.data.data;
                 this.setState({
@@ -47,3 +47,5 @@ export class Wallpaper extends Component<any, Paper> {
         window.location.href = "https://microsee.page.link/H3Ed"
     }
 }
+
+export default Wallpaper

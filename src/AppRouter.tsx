@@ -1,13 +1,20 @@
-import React from "react";
-import {BrowserRouter as Router, Route} from "react-router-dom";
-import {Wallpaper} from "./pages/wallpaper";
-import HomePage from "./pages/HomePage";
+import React, {Suspense} from "react";
+import {HashRouter as Router, Route} from "react-router-dom";
+import {Loading} from "./pages/Loading";
+// import Wallpaper from "./pages/wallpaper";
+// import HomePage from "./pages/HomePage";
+
+const lazyHomePage = React.lazy(() => import("./pages/HomePage"));
+const lazyWallpaper = React.lazy(() => import("./pages/wallpaper"));
 
 function AppRouter() {
+
     return (
         <Router>
-            <Route path="/wallpaper/:id" component={Wallpaper}/>
-            <Route path="/" exact component={HomePage}/>
+            <Suspense fallback={<Loading/>} >
+                <Route path="/wallpaper/:id" component={lazyWallpaper}/>
+                <Route path="/" exact component={lazyHomePage}/>
+            </Suspense>
         </Router>
     );
 }
