@@ -7,3 +7,4 @@ export function isMobile() {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i));
 }
+

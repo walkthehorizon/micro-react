@@ -43,3 +43,16 @@ div#spin-fill {
     align-items: center;
     justify-content: center;
 }
+
+h1#title{
+    font-size: 50px;
+}
+
+/* p#home_download{
+    width: 300px;
+    height: 60px;
+    background: lawngreen;
+    border-radius: 30px;
+
+    border-block-width: 0px;
+} */

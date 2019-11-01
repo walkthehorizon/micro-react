@@ -1,0 +1,45 @@
+.launch_m {
+  width: 26vw;
+  height: 26vw;
+  margin-left: 37vw;
+  margin-top: 30vh;
+}
+
+.title_m {
+  font-size: 1.6rem;
+  color: white;
+  height: auto;
+  margin: 0 auto;
+  top: 5vh;
+  color: #0F324D;
+  text-align: center;
+  position: relative;
+}
+
+
+.download_m {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  top: 70vh;
+  width: 60vw;
+  margin-left: 20vw;
+  position: absolute;
+  border-radius: 5vw;
+  background-color: #32B2A7;
+}
+
+.left{
+  width: 20vw;
+  height: auto;
+  position: absolute;
+}
+
+.right{
+  position: absolute;
+  margin-left: 80vw;
+  width: 20vw;
+  position: absolute;
+  height: auto;
+}
