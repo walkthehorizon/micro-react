@@ -13,7 +13,8 @@ div#paper_bg {
     text-align: center;
     align-items: center;
     justify-content: center;
-    background: url("https://music.dbankcdn.com/music-pics-cn/campaign/20190430/pathExchangeZip/170912_wallpaperHome.svg") no-repeat center fixed;
+    background: #1C1C1C;
+    /* background: url("https://music.dbankcdn.com/music-pics-cn/campaign/20190430/pathExchangeZip/170912_wallpaperHome.svg") no-repeat center fixed; */
 }
 
 img#paper_img {

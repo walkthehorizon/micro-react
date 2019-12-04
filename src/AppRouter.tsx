@@ -8,6 +8,7 @@ const lazyHomePage = React.lazy(() => import("./pages/Home"));
 const lazyDowanload = React.lazy(()=> import("./home/Download"))
 const lazyWallpaper = React.lazy(() => import("./pages/wallpaper"));
 const lazyDownloadMobile = React.lazy(()=>import("./home/mobile/Download"))
+const lazyPrivacy = React.lazy(()=>import("./pages/Privacy"))
 
 function AppRouter() {
 
@@ -18,6 +19,7 @@ function AppRouter() {
                 <Route path="/" exact component={lazyHomePage}/>
                 <Route path="/download/" exact component = {lazyDowanload}/>
                 <Route path="/m/download/" exact component = {lazyDownloadMobile}/>
+                <Route path="/privacy"  component={lazyPrivacy}/>
             </Suspense>
         </Router>
     );

@@ -28,7 +28,7 @@ class HomePage extends Component<any, any> {
           className="download"
           onClick={() => {
             window.open(
-              "https://wallpager-1251812446.cos.ap-beijing.myqcloud.com/app-debug.apk"
+              "https://wallpager-1251812446.cos.ap-beijing.myqcloud.com/MicroWallPager_release.apk"
             );
           }}
         >

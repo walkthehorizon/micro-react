@@ -43,7 +43,7 @@ class HomeMobile extends Component<any, any> {
             alt=""
           />
         </div>
-        <div className="download_m" onClick = {()=>{window.open('https://wallpager-1251812446.cos.ap-beijing.myqcloud.com/app-debug.apk')}}>
+        <div className="download_m" onClick = {()=>{window.open('https://wallpager-1251812446.cos.ap-beijing.myqcloud.com/MicroWallPager_release.apk')}}>
             立即下载
         </div>
       </div>
