@@ -1,28 +1,29 @@
-import React, {Suspense} from "react";
-import {BrowserRouter as Router, Route} from "react-router-dom";
-import {Loading} from "./pages/Loading";
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Loading } from "./pages/Loading";
 // import Wallpaper from "./pages/wallpaper";
 // import HomePage from "./pages/HomePage";
 
 const lazyHomePage = React.lazy(() => import("./pages/Home"));
-const lazyDowanload = React.lazy(()=> import("./home/Download"))
+const lazyDowanload = React.lazy(() => import("./home/Download"));
 const lazyWallpaper = React.lazy(() => import("./pages/wallpaper"));
-const lazyDownloadMobile = React.lazy(()=>import("./home/mobile/Download"))
-const lazyPrivacy = React.lazy(()=>import("./pages/Privacy"))
+const lazyDownloadMobile = React.lazy(() => import("./home/mobile/Download"));
+const lazyPrivacy = React.lazy(() => import("./pages/Privacy"));
+const lazyAgreement = React.lazy(() => import("./pages/Agreement"));
 
 function AppRouter() {
-
-    return (
-        <Router>
-            <Suspense fallback={<Loading/>} >
-                <Route path="/wallpaper/:id" component={lazyWallpaper}/>
-                <Route path="/" exact component={lazyHomePage}/>
-                <Route path="/download/" exact component = {lazyDowanload}/>
-                <Route path="/m/download/" exact component = {lazyDownloadMobile}/>
-                <Route path="/privacy"  component={lazyPrivacy}/>
-            </Suspense>
-        </Router>
-    );
+  return (
+    <Router>
+      <Suspense fallback={<Loading />}>
+        <Route path="/wallpaper/:id" component={lazyWallpaper} />
+        <Route path="/" exact component={lazyHomePage} />
+        <Route path="/download/" exact component={lazyDowanload} />
+        <Route path="/m/download/" exact component={lazyDownloadMobile} />
+        <Route path="/privacy" component={lazyPrivacy} />
+        <Route path="/agreement" component={lazyAgreement} />
+      </Suspense>
+    </Router>
+  );
 }
 
-export default AppRouter
+export default AppRouter;
