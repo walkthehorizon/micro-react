@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { link } from "fs";
-import { Link } from "react-router-dom";
 
 class Privacy extends Component<any,any> {
   constructor(props: Readonly<any>) {

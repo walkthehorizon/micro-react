@@ -10,6 +10,7 @@ const lazyWallpaper = React.lazy(() => import("./pages/wallpaper"));
 const lazyDownloadMobile = React.lazy(() => import("./home/mobile/Download"));
 const lazyPrivacy = React.lazy(() => import("./pages/Privacy"));
 const lazyAgreement = React.lazy(() => import("./pages/Agreement"));
+const lazyTest = React.lazy(() => import("./pages/TODOLIST"));
 
 function AppRouter() {
   return (
@@ -21,6 +22,7 @@ function AppRouter() {
         <Route path="/m/download/" exact component={lazyDownloadMobile} />
         <Route path="/privacy" component={lazyPrivacy} />
         <Route path="/agreement" component={lazyAgreement} />
+        <Route path="/Test" component={lazyTest} />
       </Suspense>
     </Router>
   );
