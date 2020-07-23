@@ -1,7 +1,7 @@
-import React, { Component} from "react";
+import React, { Component } from "react";
 import "../mobile/download.css";
 import { isMobile } from "../../Util";
-import axios from "axios";
+// import axios from "axios";
 
 class HomeMobile extends Component<any, any> {
   constructor(props: Readonly<any>) {
@@ -42,7 +42,6 @@ class HomeMobile extends Component<any, any> {
     //                 }
     //             });
     //         });
-
     //         wx.error(function (res) {
     //             alert(res);
     //             // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
@@ -66,7 +65,7 @@ class HomeMobile extends Component<any, any> {
           className="right"
           src={require("../../images/download_pattern_right.png")}
           alt="right"
-          onClick={function(event: any) {
+          onClick={function (event: any) {
             console.log(event.target.getAttribute("src"));
           }}
         />
@@ -83,7 +82,7 @@ class HomeMobile extends Component<any, any> {
               width: "2rem",
               height: "2rem",
               position: "relative",
-              left: "2vw"
+              left: "2vw",
             }}
             alt=""
           />
