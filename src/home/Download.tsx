@@ -23,7 +23,7 @@ class HomePage extends Component<any, State> {
     return (
       <div className="root">
         <div className="header">
-          <div className="title">萌幻Cos</div>
+          <div className="title">麋鹿</div>
           <div className="summary">海量高清Cos美图尽享</div>
         </div>
 
@@ -55,7 +55,7 @@ class HomePage extends Component<any, State> {
               豫ICP备18030831号
             </a>
           </div>
-          <div>微梦科技 版权所有</div>
+          <div>麋鹿科技 版权所有</div>
         </div>
       </div>
     );

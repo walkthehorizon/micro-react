@@ -1,16 +1,15 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Loading } from "./pages/Loading";
-// import Wallpaper from "./pages/wallpaper";
-// import HomePage from "./pages/HomePage";
+import Loading from "./pages/Loading";
 
 const lazyHomePage = React.lazy(() => import("./pages/Home"));
 const lazyDowanload = React.lazy(() => import("./home/Download"));
-const lazyWallpaper = React.lazy(() => import("./pages/wallpaper"));
+const lazyWallpaper = React.lazy(() => import("./pages/detail/Wallpaper"));
 const lazyDownloadMobile = React.lazy(() => import("./home/mobile/Download"));
 const lazyPrivacy = React.lazy(() => import("./pages/Privacy"));
 const lazyAgreement = React.lazy(() => import("./pages/Agreement"));
-const lazyTest = React.lazy(() => import("./pages/TODOLIST"));
+// const lazyTODO = React.lazy(() => import("./pages/TODOLIST"));
+const lazyTest = React.lazy(() => import("./pages/test/Test"));
 
 function AppRouter() {
   return (
@@ -22,7 +21,7 @@ function AppRouter() {
         <Route path="/m/download/" exact component={lazyDownloadMobile} />
         <Route path="/privacy" component={lazyPrivacy} />
         <Route path="/agreement" component={lazyAgreement} />
-        <Route path="/Test" component={lazyTest} />
+        <Route path="/test" component={lazyTest} />
       </Suspense>
     </Router>
   );

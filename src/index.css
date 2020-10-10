@@ -1,52 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
 div#paper_bg {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background: #1C1C1C;
-    /* background: url("https://music.dbankcdn.com/music-pics-cn/campaign/20190430/pathExchangeZip/170912_wallpaperHome.svg") no-repeat center fixed; */
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #1c1c1c;
+  /* background: url("https://music.dbankcdn.com/music-pics-cn/campaign/20190430/pathExchangeZip/170912_wallpaperHome.svg") no-repeat center fixed; */
 }
 
 img#paper_img {
-    width: 100vw;
-    height: auto;
-    position: center;
-    /*transform: translateX(-10%);*/
+  width: 100vw;
+  height: auto;
+  position: center;
+  /*transform: translateX(-10%);*/
 }
 
-#paper_submit {
-    width: 60vw;
-    height: 4vh;
-    color: hotpink;
-    position: fixed;
-    bottom: 5vw;
-    left: 20vw;
-    right: 20vw;
-    background-color: rgba(255, 255, 255, 0.5);
-}
+/* #paper_submit {
+  width: 60vw;
+  height: 4vh;
+  color: hotpink;
+  position: fixed;
+  bottom: 5vw;
+  left: 20vw;
+  right: 20vw;
+  background-color: rgba(255, 255, 255, 0.5);
+} */
 
 div#spin-fill {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-h1#title{
-    font-size: 50px;
+h1#title {
+  font-size: 50px;
 }
 
 /* p#home_download{
